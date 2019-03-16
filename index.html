@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Digital chemistry</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="/fonts/cstm_xprmntl_01-webfont.woff2" rel="stylesheet">
+    <link href="/fonts/cstm_xprmntl_01-webfont.woff" rel="stylesheet">
 </head>
 
 <body>
@@ -21,12 +25,24 @@
                         <span></span>
                     </div>
                     <div class="menu-name">menu</div>
+                    <nav class="sub-menu">
+                        <ul class="sub-menu-list">
+                            <li><a href="/post.html">article</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">contacts</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="user-block">
-                    <ul>
-                        <li class="search"><a href="#">search</a></li>
-                        <li class="personal"><a href="#">personal</a></li>
-                        <li class="lang-switch"><a href="#">ru</a></li>
+                    <ul class="user-block__list">
+                        <li><a href="#" class="search" title="search"></a></li>
+                        <li><a href="#" class="personal" title="personal"></a></li>
+                        <li><a href="#" class="lang-switch">ru
+                                <ul class="lang-switch__list">
+                                    <li>de</li>
+                                    <li>en</li>
+                                </ul>
+                            </a></li>
                     </ul>
                 </div>
             </div>
@@ -34,49 +50,116 @@
     </header>
 
     <main>
-        <div class="intro">
-            <h1 class="main-title">Digital chemistry</h1>
-            <div class="intro-text">
-                <h2 class="sub-title">mission</h2>
-                <p class="sub-text">We are one of the industrial pioneers in the field of digitalization.
-                    Innovative knowledge, efficient interaction with clients, best specialists and unique experience.</p>
+        <div class="main-intro">
+            <div class="container">
+                <h1 class="main-intro__title">Digital chemistry</h1>
+                <div class="main-intro__text">
+                    <h2 class="sub-title">mission</h2>
+                    <p class="sub-text">We are one of the industrial pioneers in the field of digitalization.
+                        Innovative knowledge, efficient interaction with clients, best specialists and unique
+                        experience.</p>
+                </div>
             </div>
         </div>
         <section class="main-section">
             <div class="container">
-                <div class="blog-title">
-                    <div class="blog-title__img">
-                        <img src="/img/bitmap.jpg" alt="">
+                <div class="cards-list">
+                    <div class="cards-list__card">
+                        <div class="card">
+                            <a href="/post.html">
+                                <div class="card__img">
+                                    <img src="/img/bitmap.jpg" alt="">
+                                </div>
+                                <div class="card__info">
+                                    <div class="date card__date">30 nov 2018</div>
+                                    <div class="tag card__tags">Predictive analytics</div>
+                                    <div class="tags-show-btn"></div>
+                                </div>
+                                <div class="card__announce-text">Biological treatment facilities launched at our
+                                    site</div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="/post.html">
+                                <div class="card__img">
+                                    <img src="/img/bitmap3.jpg" alt="">
+                                </div>
+                                <div class="date card__date">30 nov 2018</div>
+                                <div class="tag card__tags">Predictive analytics</div>
+                                <div class="card__announce-text">Biological treatment facilities launched at our
+                                    site</div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="/post.html">
+                                <div class="card__img">
+                                    <img src="/img/bitmap1.jpg  " alt="">
+                                </div>
+                                <div class="date card__date">30 nov 2018</div>
+                                <div class="tag card__tags">Predictive analytics</div>
+                                <div class="card__announce-text">Biological treatment facilities launched at our
+                                    site</div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="/post.html">
+                                <div class="card__img">
+                                    <img src="/img/bitmap.jpg" alt="">
+                                </div>
+                                <div class="date card__date">30 nov 2018</div>
+                                <div class="tag card__tags">Predictive analytics</div>
+                                <div class="card__announce-text">Biological treatment facilities launched at our
+                                    site</div>
+                            </a>
+                        </div>
+                        <div class="card">
+                            <a href="/post.html">
+                                <div class="card__img">
+                                    <img src="/img/bitmap.jpg" alt="">
+                                </div>
+                                <div class="date card__date">30 nov 2018</div>
+                                <div class="tag card__tags">Predictive analytics</div>
+                                <div class="card__announce-text">Biological treatment facilities launched at our
+                                    site</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="blog-title__date">30 nov 2018</div>
-                    <div class="blog-title__tags">Predictive analytics</div>
-                    <div class="blog-title__announce-text">Biological treatment facilities launched at our site</div>
                 </div>
             </div>
         </section>
+        </div>
+
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="copyright">Company © 2018</div>
-            <div class="footer__nav">
-                <ul>
-                    <li><a href="#">Privacy & Legal</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog on Habr</a></li>
-                    <li><a href="#">Get Newsletter</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="footer__copyright">
+                <div class="copyright">Company © 2018</div>
             </div>
-            <div class="footer__social">
-                <ul>
-                    <li><a href="#">VK</a></li>
-                    <li><a href="#">Twit</a></li>
-                    <li><a href="#">Fb</a></li>
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">Instagramm</a></li>
-                </ul>
+            <div class="footer-right">
+                <div class="footer__nav">
+                    <div class="nav">
+                        <ul class="nav__list">
+                            <li><a href="#">Privacy & Legal</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog on Habr</a></li>
+                            <li><a href="#">Get Newsletter</a></li>
+                            <li><a href="#" class="arrow-up" title="scroll-up"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li><a href="#" class="vk" title="VK"></a></li>
+                            <li><a href="#" class="twit" title="twitter"></a></li>
+                            <li><a href="#" class="fb" title="FB"></a></li>
+                            <li><a href="#" class="youtube" title="YouTube"></a></li>
+                            <li><a href="#" class="insta" title="Instagramm"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
