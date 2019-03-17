@@ -7,59 +7,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Post</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-inner">
-            <div class="container">
-                <div class="header__logo">
-                    <a href="/index.html">logo</a>
+    <header class="header header--inner">
+        <div class="container">
+            <div class="header__logo">
+                <a href="/index.html">logo</a>
+            </div>
+            <div class="header__menu-btn">
+                <div class="menu-hamburger">
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="header__menu-btn">
-                    <div class="menu-hamburger">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-name">menu</div>
-                    <nav class="sub-menu">
-                        <ul class="sub-menu-list">
-                            <li><a href="/post.html">article</a></li>
-                            <li><a href="#">news</a></li>
-                            <li><a href="#">contacts</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="user-block">
-                    <ul>
-                        <li class="search"><a href="#">search</a></li>
-                        <li class="personal"><a href="#">personal</a></li>
-                        <li class="lang-switch"><a href="#">ru</a></li>
+                <div class="menu-name">menu</div>
+                <nav class="sub-menu">
+                    <ul class="sub-menu-list">
+                        <li><a href="/post.html">article</a></li>
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">contacts</a></li>
                     </ul>
-                </div>
+                </nav>
+            </div>
+            <div class="user-block">
+                <ul class="user-block__list">
+                    <li><a href="#" class="search" title="search"></a></li>
+                    <li><a href="#" class="personal" title="personal"></a></li>
+                    <li><a href="#" class="lang-switch">ru
+                            <ul class="lang-switch__list">
+                                <li>de</li>
+                                <li>en</li>
+                            </ul>
+                        </a></li>
+                </ul>
             </div>
         </div>
     </header>
-
     <main>
-        <section class="article-intro">
-            <div class="article-intro__breadcrumbs">all media</div>
-            <h1 class="article-intro__title">A biological wastewater treatment plant
-                was opened at the Perm enterprise of SIBUR</h1>
-            <div class="article-intro__info-link">
-                <div class="info">6 min read</div>
-                <div class="doc-link">view pdf</div>
-            </div>
-            <div class="date date--white article-intro__date"></div>
-            <div class="tags article-intro__tags-list">
-                <div class="tags-list">
-                    <div class="tags-list__tag">
-                        <div class="tag tag--white">Predictive analytics</div>
-                        <div class="tag tag--white">robots</div>
-                        <div class="tag tag--white">techical visions</div>
+        <section class="article-intro" style="background-image: url('/img/bg-img.jpg')">
+            <div class="container">
+                <div class="article-intro__inner">
+                    <div class="inner">
+                        <div class="inner__left">
+                            <div class="article-intro__breadcrumbs">
+                                <div class="breadcrumbs"><a href="">all media</a></div>
+                            </div>
+                            <h1 class="article-intro__title">A biological wastewater treatment plant
+                                was opened at the Perm enterprise of SIBUR</h1>
+                            <div class="article-intro__info">
+                                <div class="date date--white article-intro__date">30 nov 2018</div>
+                                <div class="tags article-intro__tags-list">
+                                    <div class="tags-list">
+                                        <div class="tags-list__tag">
+                                            <div class="tag tag--white">Predictive analytics</div>
+                                            <div class="tag tag--white">robots</div>
+                                            <div class="tag tag--white">techical visions</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner__right">
+                            <div class="article-intro__info-link">
+                                <div class="info">6 min read</div>
+                                <div class="doc-link"><a href="#">view pdf</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <section class="article">
@@ -78,12 +95,16 @@
                 wallpaper, cable compounds and other construction products used to ensure higher strength,
                 wear and cold resistance. In addition, as a phthalate-free plasticiser, DOTP
                 meets the highest environmental requirements. DOTP production
-                will use text feedstock and become yet another process stage along the value chain. The Russian market
-                of common plasticisers faces a shortage of about 60 ktpa, which is covered with supplies from Europe.
+                will use text feedstock and become yet another process stage along the value chain. The Russian
+                market
+                of common plasticisers faces a shortage of about 60 ktpa, which is covered with supplies from
+                Europe.
             </p>
             <p class="article__text">
-                The Perm-based DOTP project will help substitute a major part of alternative product imports and enable
-                plasticiser supplies to export markets, where the demand for DOTP is also rapidly growing. As part of
+                The Perm-based DOTP project will help substitute a major part of alternative product imports and
+                enable
+                plasticiser supplies to export markets, where the demand for DOTP is also rapidly growing. As part
+                of
                 the project, the Company signed a licence agreement with Aekyung Petrochemical, South Korea.</p>
             <div class="article__infographic">
                 <div class="infographic">
@@ -120,15 +141,20 @@
             <div class="article__important">
                 <p class="important__text"></p>
             </div>
-            <p class="article__text">The core process equipment was scheduled to be assembled in July and August, with
-                two out of four reactors having been successfully installed in their designed position. The reactors
+            <p class="article__text">The core process equipment was scheduled to be assembled in July and August,
+                with
+                two out of four reactors having been successfully installed in their designed position. The
+                reactors
                 are supplied by the Yekaterinburg-based Uralkhimmash. In addition, a washing column and DOTP and
                 2-ethylhexanol treatment columns have been fully assembled. </p>
-            <p class="article__text">Construction and installation works are carried out by two Perm-based contractors
-                – GSE-Permneftegazstroy (general contractor for construction) and RSP Alexiy. So far, approximately 65%
+            <p class="article__text">Construction and installation works are carried out by two Perm-based
+                contractors
+                – GSE-Permneftegazstroy (general contractor for construction) and RSP Alexiy. So far, approximately
+                65%
                 of the total works have been completed.</p>
             <p class="article__text">The Perm site team aims to wrap up the construction and assembly exercise  and
-                switch to pre-commissioning operations in December 2018. The new facility is planned for launch in 1H
+                switch to pre-commissioning operations in December 2018. The new facility is planned for launch in
+                1H
                 2019.</p>
             <div class="article__block-bg-white">
                 <div class="block-bg-white">
@@ -160,60 +186,88 @@
                 </div>
             </div>
             <div class="article__cards-list">
-                <div class="cards-list">
-                    <p class="cards-list__name"></p>
-                    <div class="cards-list__card">
-                        <a href="/post.html" class="card">
-                            <div class="card__img">
-                                <img src="/img/bitmap.jpg" alt="">
+                <div class="container">
+                    <div class="cards-list">
+                        <p class="cards-list__name">Also in Predictive analytics</p>
+                        <div class="cards-list__card">
+                            <div class="card">
+                                <a href="/post.html">
+                                    <div class="card__img">
+                                        <img src="/img/bitmap.jpg" alt="">
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="date card__date">30 nov 2018</div>
+                                        <div class="tag card__tags">Predictive analytics</div>
+                                        <div class="tags-show-btn"></div>
+                                    </div>
+                                    <div class="card__announce-text">Biological treatment facilities launched at our
+                                        site</div>
+                                </a>
                             </div>
-                            <div class="date card__date">30 nov 2018</div>
-                            <div class="tag card__tags">Predictive analytics</div>
-                            <div class="card__announce-text">Biological treatment facilities launched at our site</div>
-                        </a>
-                        <a href="/post.html" class="card">
-                            <div class="card__img">
-                                <img src="/img/bitmap.jpg" alt="">
+                            <div class="card">
+                                <a href="/post.html">
+                                    <div class="card__img">
+                                        <img src="/img/bitmap3.jpg" alt="">
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="date card__date">30 nov 2018</div>
+                                        <div class="tag card__tags">Predictive analytics</div>
+                                        <div class="tags-show-btn"></div>
+                                    </div>
+                                    <div class="card__announce-text">We signs cooperation agreements with the leading
+                                        institutes of the Siberian Branch of the Russian Academy of Sciences</div>
+                                </a>
                             </div>
-                            <div class="date card__date">30 nov 2018</div>
-                            <div class="tag card__tags">Predictive analytics</div>
-                            <div class="card__announce-text">Biological treatment facilities launched at our site</div>
-                        </a>
-                        <a href="/post.html" class="card">
-                            <div class="card__img">
-                                <img src="/img/bitmap.jpg" alt="">
+                            <div class="card">
+                                <a href="/post.html">
+                                    <div class="card__img">
+                                        <img src="/img/bitmap1.jpg  " alt="">
+                                    </div>
+                                    <div class="card__info">
+                                        <div class="date card__date">30 nov 2018</div>
+                                        <div class="tag card__tags">Predictive analytics</div>
+                                        <div class="tags-show-btn"></div>
+                                    </div>
+                                    <div class="card__announce-text">Creates Technological Modelling Centre</div>
+                                </a>
                             </div>
-                            <div class="date card__date">30 nov 2018</div>
-                            <div class="tag card__tags">Predictive analytics</div>
-                            <div class="card__announce-text">Biological treatment facilities launched at our site</div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
-            <div class="copyright">Company © 2018</div>
-            <div class="footer__nav">
-                <ul>
-                    <li><a href="#">Privacy & Legal</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog on Habr</a></li>
-                    <li><a href="#">Get Newsletter</a></li>
-                    <li><a href="#"></a></li>
-                </ul>
+            <div class="footer__copyright">
+                <div class="copyright">Company © 2018</div>
             </div>
-            <div class="footer__social">
-                <ul>
-                    <li><a href="#">VK</a></li>
-                    <li><a href="#">Twit</a></li>
-                    <li><a href="#">Fb</a></li>
-                    <li><a href="#">YouTube</a></li>
-                    <li><a href="#">Instagramm</a></li>
-                </ul>
+            <div class="footer-right">
+                <div class="footer__nav">
+                    <div class="nav">
+                        <ul class="nav__list">
+                            <li><a href="#">Privacy & Legal</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog on Habr</a></li>
+                            <li><a href="#">Get Newsletter</a></li>
+                            <li><a href="#" class="arrow-up" title="scroll-up"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__social">
+                    <div class="social">
+                        <ul class="social__list">
+                            <li><a href="#" class="vk" title="VK"></a></li>
+                            <li><a href="#" class="twit" title="twitter"></a></li>
+                            <li><a href="#" class="fb" title="FB"></a></li>
+                            <li><a href="#" class="youtube" title="YouTube"></a></li>
+                            <li><a href="#" class="insta" title="Instagramm"></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
