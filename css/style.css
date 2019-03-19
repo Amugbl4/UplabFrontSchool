@@ -48,20 +48,23 @@ body {
 }
 
 .header__left {
-    text-align: center;
-    width: 36px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    text-align: left;
+    width: 33%;
+    margin: 40px 0;
+    /* margin-bottom: 40px; */
 }
 
 .header__center {
+    width: 33%;
     align-self: center;
     margin: 40px auto;
 }
 
 .header__right {
+    width: 33%;
     align-self: right;
     margin:  40px 0;
+    margin-right: -270px;
 }
 
 .menu-btn {
@@ -258,17 +261,26 @@ body {
     width: 720px;
 }
 
-.cards-list__card {
+.cards-list {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px;
 }
 
 .card {
+    position: relative;
     flex: 0 0 33%;
     width: 33%;
     padding: 0 5px;
     margin-bottom: 48px;
+}
+
+.card__link {
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    width: 100%;
+    height: 100%;
 }
 
 .card__img {
@@ -278,8 +290,9 @@ body {
 }
 
 .date,
-.tag {
+.link {
     display: inline-block;
+    min-height: 14px;
     vertical-align: top;
     color: #000;
     opacity: 0.5;
@@ -289,14 +302,14 @@ body {
 }
 
 .date--white,
-.tag--white {
+.link--white {
     color: #fff;
     opacity: 1;
 }
 
 .date--bg-white,
-.tag--bg-white {
-    background-color: grey;
+.link--bg-white {
+    background-color: #fff;
     background-size: cover;
 }
 
@@ -311,16 +324,19 @@ body {
 }
 
 .card__info {
-    display: flex;
-    justify-content: flex-start;
     margin: 24px 0;
 }
 
-.tags-show-btn{
-    display: block;
+.card__info .link,
+.card__info .date {
+    margin-right: 24px;
+    z-index: 2;
+}
+
+.link--more {
     width: 17px;
-    height: 3px;
     background-repeat: no-repeat;
+    background-position: center;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='17px' height='3px' viewBox='0 0 17 3' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3E9DC715E9-A8EF-421C-9169-64C8994ABC8A%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' opacity='0.5'%3E%3Cg id='index' transform='translate(-435.000000, -880.000000)' fill='%23000000'%3E%3Cg id='cards-1-line' transform='translate(121.000000, 551.000000)'%3E%3Cg id='card-1'%3E%3Cg id='more' transform='translate(314.000000, 329.000000)'%3E%3Ccircle id='Oval' cx='1.5' cy='1.5' r='1.5'%3E%3C/circle%3E%3Ccircle id='Oval' cx='8.5' cy='1.5' r='1.5'%3E%3C/circle%3E%3Ccircle id='Oval' cx='15.5' cy='1.5' r='1.5'%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -333,18 +349,22 @@ body {
 }
 
 .article {
+    position: relative;
     background-color: #f1f2f2;
 }
 
 .article__text {
-    padding: 0;
+    padding: 80px 120px;
     font-size: 16px;
     line-height: 26px;
+    width: 70%;
     color: #000;
 }
 
-.article__contacts {
+.article__infobox {
     position: absolute;
+    top: -50px;
+    right: 0;
     display: block;
     background-color: #fff;
     color: #000;
