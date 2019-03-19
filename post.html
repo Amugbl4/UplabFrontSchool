@@ -11,39 +11,42 @@
 </head>
 
 <body>
-    <header class="header header--inner">
+    <header class="header header--black">
         <div class="container">
-            <div class="header__logo">
-                <a href="/index.html">logo</a>
-            </div>
-            <div class="header__menu-btn">
-                <div class="menu-hamburger">
-                    <span></span>
-                    <span></span>
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <div class="logo">
+                        <a href="/index.html">logo</a>
+                    </div>
                 </div>
-                <div class="menu-name">menu</div>
-                <nav class="sub-menu">
-                    <ul class="sub-menu-list">
-                        <li><a href="/post.html">article</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="user-block">
-                <ul class="user-block__list">
-                    <li><a href="#" class="search" title="search"></a></li>
-                    <li><a href="#" class="personal" title="personal"></a></li>
-                    <li><a href="#" class="lang-switch">ru
-                            <ul class="lang-switch__list">
-                                <li>de</li>
-                                <li>en</li>
-                            </ul>
-                        </a></li>
-                </ul>
+                <div class="header__center">
+                    <div class="menu-btn">menu</div>
+                    <nav class="sub-menu">
+                        <ul class="sub-menu-list">
+                            <li><a href="/post.html">article</a></li>
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="user-block">
+                        <ul class="user-block__list">
+                            <li><a href="#" class="search" title="search"></a></li>
+                            <li><a href="#" class="personal" title="personal"></a></li>
+                            <li><a href="#" class="lang-switch">ru
+                                    <ul class="lang-switch__list">
+                                        <li>de</li>
+                                        <li>en</li>
+                                    </ul>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+
     <main>
         <section class="article-intro" style="background-image: url('/img/bg-img.jpg')">
             <div class="container">
@@ -81,10 +84,12 @@
         </section>
         <section class="article">
             <div class="article__contacts">
-                <h3></h3>
-                <p></p>
-                <a href="tel:+74952228888" class="">+7 (495) 222-88-88</a>
-                <a href="mailto:lebedal@company.ru" class="">lebedal@company.ru</a>
+                <div class="card">
+                    <h3>International Media Relations</h3>
+                    <p>Anna Tihomirova</p>
+                    <a href="tel:+74952228888" class="">+7 (495) 222-88-88</a>
+                    <a href="mailto:lebedal@company.ru" class="">lebedal@company.ru</a>
+                </div>
             </div>
             <div class="article__social-share">
                 <a href="#" class="social-share social-share-vk">VK</a>
@@ -179,16 +184,17 @@
                 </div>
             </div>
             <div class="article__tags-list">
-                <div class="tags-list">
-                    <div class="tags-list__tag">
-                        <div class="tag tag--bg-white">Predictive analytics</div>
-                    </div>
-                </div>
+                <div class="tag tag--bg-white">Predictive analytics</div>
+                <div class="tag tag--bg-white">Business</div>
+                <div class="tag tag--bg-white">Business</div>
+                <div class="tag tag--bg-white">Business</div>
+                <div class="tag tag--bg-white">Perm</div>
+            </div>
             </div>
             <div class="article__cards-list">
                 <div class="container">
+                    <p class="cards-list__name">Also in Predictive analytics</p>
                     <div class="cards-list">
-                        <p class="cards-list__name">Also in Predictive analytics</p>
                         <div class="cards-list__card">
                             <div class="card">
                                 <a href="/post.html">

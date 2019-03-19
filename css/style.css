@@ -42,24 +42,34 @@ body {
     text-decoration: none;
 }
 
-.header .container {
+.header__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
-.header__logo {
+.header__left {
     text-align: center;
     width: 36px;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.header__menu-btn {
+.header__center {
+    align-self: center;
+    margin: 40px auto;
+}
+
+.header__right {
+    align-self: right;
+    margin:  40px 0;
+}
+
+.menu-btn {
     position: relative;
-    margin: 40px 0;
     padding-left: 80px;
 }
 
-.header__menu-btn::before {
+.menu-btn::before {
     position: absolute;
     content: "";
     display: block;
@@ -70,7 +80,7 @@ body {
     left: 10px;
 }
 
-.header__menu-btn::after {
+.menu-btn::after {
     position: absolute;
     content: "";
     display: block;
@@ -83,10 +93,6 @@ body {
 
 .header .sub-menu {
     display: none;
-}
-
-.header .user-block {
-    margin:  40px 0;
 }
 
 .header .user-block__list {
@@ -174,12 +180,28 @@ body {
 }
 
 .breadcrumbs a {
+    position: relative;
     color: #fff;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.breadcrumbs a::before {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+    content: "";
+    display: block;
+    color: #fff;
+    font-size: 20px;
 }
 
 .article-intro {
@@ -321,6 +343,14 @@ body {
     color: #000;
 }
 
+.article__contacts {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    color: #000;
+    
+}
+
 .first-paragraph::first-letter {
     color: green;
     font-size: 144px;
@@ -357,22 +387,26 @@ body {
 
 .footer-right {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
 }
 
 .nav__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .nav__list li {
     padding-right: 46px;
 }
 
+.nav__list li:last-child {
+    padding-right: 0;
+    margin-left: auto;
+}
+
 .nav__list .arrow-up {
-    display: block;
-    margin: 0;  
-    padding-right: 0; 
+    display: block;  
     width: 14px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='18px' viewBox='0 0 16 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3E3CF81437-6341-4D73-A769-5797BAC8E477%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='index' transform='translate(-1312.000000, -2178.000000)'%3E%3Cg id='footer' transform='translate(0.000000, 2099.000000)'%3E%3Cg id='up_arrow' transform='translate(1313.000000, 80.000000)'%3E%3Crect id='Rectangle-8' fill='%23FFFFFF' x='6' y='1' width='2' height='16'%3E%3C/rect%3E%3Cpolyline id='Rectangle-16' stroke='%23FFFFFF' stroke-width='2' transform='translate(7.000000, 7.363961) rotate(-45.000000) translate(-7.000000, -7.363961) ' points='2.30761184 2.67157288 11.6923882 2.67157288 11.6923882 12.0563492'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
