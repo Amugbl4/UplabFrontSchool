@@ -438,8 +438,9 @@ body {
 .first-paragraph::first-letter {
     color: green;
     font-size: 144px;
+    line-height: .8;
     float: left;
-    padding: 10px 25px 15px 0;
+    padding: 0 25px 0 0;
 }
 
 .article__important {
