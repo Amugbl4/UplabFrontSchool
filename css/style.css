@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ body {
     padding: 0;
     margin: 0;
     color: #fff;
-    font-size: 18px;    
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -64,7 +64,7 @@ body {
 .header__right {
     width: 33%;
     align-self: right;
-    margin:  40px 0;
+    margin: 40px 0;
     margin-right: -270px;
 }
 
@@ -197,8 +197,8 @@ body {
     position: absolute;
     top: 0;
     left: -60px;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
     transform: rotate(-45deg);
@@ -332,8 +332,9 @@ body {
 }
 
 .article__links {
+    margin: 80px 0 80px 0;
     padding-left: 120px;
-    padding-right: 240px;   
+    padding-right: 240px;
 }
 
 .article__links .link {
@@ -403,6 +404,7 @@ body {
 
 .section-column {
     display: flex;
+    padding-top: 80px;
 }
 
 .section-column__left {
@@ -410,71 +412,86 @@ body {
 }
 
 .section-column__right {
+    display: flex;
     position: relative;
+    /* align-self: flex-end; */
     width: 30%;
 }
 
-.article__text {
+.article__infographic {
+    align-self: flex-end;
+}
+
+.infographic__number {
+    font-size: 96px;
+    color: #2ffbc8;
+}
+
+.infographic__number-name {
+    font-size: 36px;
+    color: #2ffbc8;
+}
+
+.user-text .infographic__text {
+    margin: 0;
+    padding: 0;
+}
+
+.article__infobox {
+    position: absolute;
+    top: -50%;
+    display: block;
+    background-color: #fff;
+    color: #000;
+}
+
+.article__slider {
+    margin-top: 80px;
+}
+
+.user-text p {
     padding: 0 120px;
+    margin-bottom: 26px;
     font-size: 16px;
     line-height: 26px;
     color: #000;
 }
 
-.article__infographic {
-    vertical-align: bottom;
-}
-
-.article__infobox {
-    position: absolute;
-    top: -50px;
-    left: 0;
-    display: block;
-    background-color: #fff;
-    color: #000;
-    
-}
-
 .first-paragraph::first-letter {
-    color: green;
+    color: #2ffbc8;
     font-size: 144px;
     line-height: .8;
     float: left;
     padding: 0 25px 0 0;
 }
 
-.article__important {
+.article__important-text {
+    position: relative;
     padding: 80px 120px;
+    margin-bottom: 80px;
     background-color: #2ffbc8;
 }
 
-.important__text {
-    position: relative;
-    font-family: 'cstm_xprmntl_01regular', sans-serif;
+.article__important-text p {
+    padding: 0;
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
-    color: #121212;
 }
 
-.important__text::before {
+.article__important-text::before {
     position: absolute;
     display: block;
     content: "";
-    top: 15px;
-    left: -120px;
+    top: 105px;
+    left: 0;
     width: 80px;
     height: 1px;
     background-color: #fff;
 }
 
-.article__block-bg-white {
-    position: relative;
-}
-
 .block-bg-white {
-    position: absolute;
-    top: 320px;
-    left: 0;
+    margin-top: 280px;
     padding: 80px 120px;
     margin-right: 9999px;
     padding-right: 9999px;
@@ -493,7 +510,7 @@ body {
     line-height: 26px;
     width: 240px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
 
 .block-bg-white__list li {
@@ -501,6 +518,7 @@ body {
 }
 
 .cite {
+    margin-top: 80px;
     padding: 0 120px;
     font-size: 20px;
     line-height: 30px;
@@ -560,7 +578,7 @@ body {
 }
 
 .nav__list .arrow-up {
-    display: block;  
+    display: block;
     width: 14px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='16px' height='18px' viewBox='0 0 16 18' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: sketchtool 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3E3CF81437-6341-4D73-A769-5797BAC8E477%3C/title%3E%3Cdesc%3ECreated with sketchtool.%3C/desc%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='index' transform='translate(-1312.000000, -2178.000000)'%3E%3Cg id='footer' transform='translate(0.000000, 2099.000000)'%3E%3Cg id='up_arrow' transform='translate(1313.000000, 80.000000)'%3E%3Crect id='Rectangle-8' fill='%23FFFFFF' x='6' y='1' width='2' height='16'%3E%3C/rect%3E%3Cpolyline id='Rectangle-16' stroke='%23FFFFFF' stroke-width='2' transform='translate(7.000000, 7.363961) rotate(-45.000000) translate(-7.000000, -7.363961) ' points='2.30761184 2.67157288 11.6923882 2.67157288 11.6923882 12.0563492'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
