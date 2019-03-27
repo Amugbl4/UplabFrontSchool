@@ -52,7 +52,6 @@ body {
     text-align: left;
     width: 33%;
     margin: 40px 0;
-    /* margin-bottom: 40px; */
 }
 
 .header__center {
@@ -455,6 +454,7 @@ body {
 .article-infographic__text {
     margin: 0;
     padding: 0;
+    padding-left: 120px;
 }
 
 .article__infobox {
@@ -466,6 +466,10 @@ body {
     margin-right: -9999px;
     background-color: #fff;
     color: #000;
+}
+
+.infobox-inner {
+    width: 200px;
 }
 
 .article__infobox h3 {
@@ -501,6 +505,30 @@ body {
     background-color: #f1f2f2;
 }
 
+.slide__name {
+    padding: 30px 0 30px 120px;
+    width: 90%;
+}
+
+.slider__counter {
+    padding: 10px 0;
+}
+
+.counter__current {
+    margin-left: -20px;
+    margin-bottom: 5px;
+}
+
+.is-relative {
+    position: relative;
+}
+
+.slider__counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .slick-arrow {
     display: block;
     position: absolute;
@@ -522,6 +550,7 @@ body {
 .slick-prev::before {
     display: inline-block;
     content: "";
+    margin-left: 10px;
     width: 14px;
     height: 14px;
     border-top: 2px solid #000;
@@ -622,17 +651,44 @@ body {
     margin-bottom: 24px;
 }
 
-.cite {
+.article__cite {
+    position: relative;
     margin-top: 80px;
     padding: 0 120px;
     font-size: 20px;
     line-height: 30px;
 }
 
-.cite-author {
-    padding-left: 480px;
+.cite {
+    margin: 0;
+}
+
+.article__cite::before {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    content: "";    
+    background-image: url('../img/cite.png');
+    height: 73px;
+    width: 89px;
+
+}
+
+.cite__author {
+    position: relative;
+    padding-left: 360px;
     font-size: 16px;
     line-height: 26px;
+    width: 500px;
+}
+
+.cite__author::before {
+    display: block;
+    content: "—";
+    position: absolute;
+    top: 0;
+    right: 150px;
 }
 
 .footer {
