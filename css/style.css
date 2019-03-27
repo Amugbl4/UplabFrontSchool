@@ -56,16 +56,17 @@ body {
 }
 
 .header__center {
+    display: flex;
     width: 33%;
-    align-self: center;
+    justify-content: center;
     margin: 40px auto;
 }
 
 .header__right {
+    display: flex;
     width: 33%;
-    align-self: right;
+    justify-content: flex-end;
     margin: 40px 0;
-    margin-right: -270px;
 }
 
 .menu-btn {
@@ -99,6 +100,10 @@ body {
     display: none;
 }
 
+.user-block {
+    position: relative;
+}
+
 .header .user-block__list {
     padding: 0;
     margin: 0;
@@ -122,6 +127,12 @@ body {
     width: 28px;
     height: 28px;
     margin-right: 60px;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 0;
+    right: -30px;
 }
 
 .lang-switch__list {
@@ -385,19 +396,19 @@ body {
 }
 
 .social-share--vk {
-    background-image: url('/img/vk.png');
+    background-image: url('../img/vk.png');
     background-repeat: no-repeat;
     background-position: center
 }
 
 .social-share--twitter {
-    background-image: url('/img/twitter.png');
+    background-image: url('../img/twitter.png');
     background-repeat: no-repeat;
     background-position: center
 }
 
 .social-share--fb {
-    background-image: url('/img/fb.png');
+    background-image: url('../img/fb.png');
     background-repeat: no-repeat;
     background-position: center
 }
@@ -578,7 +589,7 @@ body {
     position: absolute;
     display: block;
     content: "";
-    top: 105px;
+    top: 95px;
     left: 0;
     width: 80px;
     height: 1px;
