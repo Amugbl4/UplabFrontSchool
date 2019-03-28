@@ -259,6 +259,13 @@ body {
     margin: 0 -5px;
 }
 
+.cards-list__name {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
+}
+
 .card {
     position: relative;
     flex: 0 0 33%;
@@ -457,7 +464,7 @@ body {
     padding-left: 120px;
 }
 
-.article__infobox {
+.article-infobox {
     display: block;
     position: absolute;
     transform: translateY(-50%);
@@ -468,20 +475,60 @@ body {
     color: #000;
 }
 
-.infobox-inner {
-    width: 200px;
-}
-
-.article__infobox h3 {
+.article-infobox__title {
+    position: relative;
     font-size: 20px;
     color: #000;
 }
 
-.article__infobox a {
+.article-infobox__title::before {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 240px;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #2ffbc8;
+}
+
+.infobox-inner {
+    width: 200px;
+}
+
+
+.article-infobox a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
     margin-bottom: 10px;
+}
+
+.tel,
+.mail {
+    position: relative;
+}
+
+.tel::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: -36px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/call.png');
+}
+
+.mail::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: -36px;
+    width: 16px;
+    height: 13px;
+    background-image: url('../img/mail.png');
 }
 
 .article__slider {
@@ -603,6 +650,7 @@ body {
 
 .article__important-text {
     position: relative;
+    margin-top: 80px;
     padding: 80px 120px;
     background-color: #2ffbc8;
 }
@@ -639,7 +687,8 @@ body {
 }
 
 .block-bg-white__list {
-    list-style: none;
+    list-style-type: none;
+    counter-reset: my-counter;
     font-size: 16px;
     line-height: 26px;
     width: 240px;
@@ -648,7 +697,17 @@ body {
 }
 
 .block-bg-white__list li {
+    position: relative;
     margin-bottom: 24px;
+}
+
+.block-bg-white__list li::before {
+    /* display: inline-block; */
+    position: absolute;
+    left: -40px;
+    content: '0' counter(my-counter);
+    counter-increment: my-counter;
+    color: #2ffbc8;
 }
 
 .article__cite {
